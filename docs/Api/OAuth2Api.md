@@ -850,7 +850,7 @@ $apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
     new GuzzleHttp\Client()
 );
 $pageSize = 250; // int | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
-$pageToken = '1'; // string | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
+$pageToken = 'pageToken_example'; // string | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
 $clientName = 'clientName_example'; // string | The name of the clients to filter by.
 $owner = 'owner_example'; // string | The owner of the clients to filter by.
 
@@ -867,7 +867,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
-| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to &#39;1&#39;] |
+| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
 | **clientName** | **string**| The name of the clients to filter by. | [optional] |
 | **owner** | **string**| The owner of the clients to filter by. | [optional] |
 
@@ -953,7 +953,7 @@ No authorization required
 ## `listTrustedOAuth2JwtGrantIssuers()`
 
 ```php
-listTrustedOAuth2JwtGrantIssuers($maxItems, $defaultItems, $issuer): \Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]
+listTrustedOAuth2JwtGrantIssuers($pageSize, $pageToken, $issuer): \Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]
 ```
 
 List Trusted OAuth2 JWT Bearer Grant Type Issuers
@@ -973,12 +973,12 @@ $apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$maxItems = 56; // int
-$defaultItems = 56; // int
+$pageSize = 250; // int | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
+$pageToken = 'pageToken_example'; // string | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
 $issuer = 'issuer_example'; // string | If optional \"issuer\" is supplied, only jwt-bearer grants with this issuer will be returned.
 
 try {
-    $result = $apiInstance->listTrustedOAuth2JwtGrantIssuers($maxItems, $defaultItems, $issuer);
+    $result = $apiInstance->listTrustedOAuth2JwtGrantIssuers($pageSize, $pageToken, $issuer);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OAuth2Api->listTrustedOAuth2JwtGrantIssuers: ', $e->getMessage(), PHP_EOL;
@@ -989,8 +989,8 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **maxItems** | **int**|  | [optional] |
-| **defaultItems** | **int**|  | [optional] |
+| **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
+| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
 | **issuer** | **string**| If optional \&quot;issuer\&quot; is supplied, only jwt-bearer grants with this issuer will be returned. | [optional] |
 
 ### Return type
@@ -1071,7 +1071,7 @@ oAuth2DeviceFlow(): \Ory\Hydra\Client\Model\DeviceAuthorization
 
 The OAuth 2.0 Device Authorize Endpoint
 
-This endpoint is not documented here because you should never use your own implementation to perform OAuth2 flows. OAuth2 is a very popular protocol and a library for your programming language will exists.  To learn more about this flow please refer to the specification: https://tools.ietf.org/html/rfc8628
+This endpoint is not documented here because you should never use your own implementation to perform OAuth2 flows. OAuth2 is a very popular protocol and a library for your programming language will exist.  To learn more about this flow please refer to the specification: https://tools.ietf.org/html/rfc8628
 
 ### Example
 
@@ -1255,7 +1255,7 @@ performOAuth2DeviceVerificationFlow(): \Ory\Hydra\Client\Model\ErrorOAuth2
 
 OAuth 2.0 Device Verification Endpoint
 
-This is the device user verification endpoint. The user is redirected here when trying to login using the device flow.
+This is the device user verification endpoint. The user is redirected here when trying to log in using the device flow.
 
 ### Example
 
@@ -1474,7 +1474,7 @@ No authorization required
 ## `revokeOAuth2ConsentSessions()`
 
 ```php
-revokeOAuth2ConsentSessions($subject, $client, $all)
+revokeOAuth2ConsentSessions($subject, $client, $consentRequestId, $all)
 ```
 
 Revoke OAuth 2.0 Consent Sessions of a Subject
@@ -1496,10 +1496,11 @@ $apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
 );
 $subject = 'subject_example'; // string | OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted.
 $client = 'client_example'; // string | OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID.
+$consentRequestId = 'consentRequestId_example'; // string | Consent Request ID  If set, revoke all token chains derived from this particular consent request ID.
 $all = True; // bool | Revoke All Consent Sessions  If set to `true` deletes all consent sessions by the Subject that have been granted.
 
 try {
-    $apiInstance->revokeOAuth2ConsentSessions($subject, $client, $all);
+    $apiInstance->revokeOAuth2ConsentSessions($subject, $client, $consentRequestId, $all);
 } catch (Exception $e) {
     echo 'Exception when calling OAuth2Api->revokeOAuth2ConsentSessions: ', $e->getMessage(), PHP_EOL;
 }
@@ -1509,8 +1510,9 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **subject** | **string**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | |
+| **subject** | **string**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | [optional] |
 | **client** | **string**| OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID. | [optional] |
+| **consentRequestId** | **string**| Consent Request ID  If set, revoke all token chains derived from this particular consent request ID. | [optional] |
 | **all** | **bool**| Revoke All Consent Sessions  If set to &#x60;true&#x60; deletes all consent sessions by the Subject that have been granted. | [optional] |
 
 ### Return type

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**challenge** | **string** | Challenge is the identifier (\&quot;logout challenge\&quot;) of the logout authentication request. It is used to identify the session. | [optional]
+**challenge** | **string** | Challenge is the identifier of the logout authentication request. | [optional]
 **client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](OAuth2Client.md) |  | [optional]
 **expiresAt** | **\DateTime** |  | [optional]
 **requestUrl** | **string** | RequestURL is the original Logout URL requested. | [optional]

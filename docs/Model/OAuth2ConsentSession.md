@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **consentRequest** | [**\Ory\Hydra\Client\Model\OAuth2ConsentRequest**](OAuth2ConsentRequest.md) |  | [optional]
+**consentRequestId** | **string** | ConsentRequestID is the identifier of the consent request that initiated this consent session. | [optional]
 **context** | **mixed** |  | [optional]
-**expiresAt** | [**\Ory\Hydra\Client\Model\OAuth2ConsentSessionExpiresAt**](OAuth2ConsentSessionExpiresAt.md) |  | [optional]
 **grantAccessTokenAudience** | **string[]** |  | [optional]
 **grantScope** | **string[]** |  | [optional]
 **handledAt** | **\DateTime** |  | [optional]
