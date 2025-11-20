@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **challenge** | **string** | Challenge is the identifier of the logout authentication request. | [optional]
-**client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](OAuth2Client.md) |  | [optional]
+**client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](OAuth2Client.md) |  | [optional]
 **expiresAt** | **\DateTime** |  | [optional]
 **requestUrl** | **string** | RequestURL is the original Logout URL requested. | [optional]
 **requestedAt** | **\DateTime** |  | [optional]

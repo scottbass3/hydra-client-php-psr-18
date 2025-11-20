@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 **grantTypes** | **string[]** |  | [optional]
 **implicitGrantAccessTokenLifespan** | **string** | Specify a time duration in milliseconds, seconds, minutes, hours. | [optional]
 **implicitGrantIdTokenLifespan** | **string** | Specify a time duration in milliseconds, seconds, minutes, hours. | [optional]
-**jwks** | [**\Ory\Hydra\Client\Model\JsonWebKeySet**](JsonWebKeySet.md) |  | [optional]
+**jwks** | [**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](JsonWebKeySet.md) |  | [optional]
 **jwksUri** | **string** | OAuth 2.0 Client JSON Web Key Set URL  URL for the Client&#39;s JSON Web Key Set [JWK] document. If the Client signs requests to the Server, it contains the signing key(s) the Server uses to validate signatures from the Client. The JWK Set MAY also contain the Client&#39;s encryption keys(s), which are used by the Server to encrypt responses to the Client. When both signing and encryption keys are made available, a use (Key Use) parameter value is REQUIRED for all keys in the referenced JWK Set to indicate each key&#39;s intended usage. Although some algorithms allow the same key to be used for both signatures and encryption, doing so is NOT RECOMMENDED, as it is less secure. The JWK x5c parameter MAY be used to provide X.509 representations of keys provided. When used, the bare key values MUST still be present and MUST match those in the certificate. | [optional]
 **jwtBearerGrantAccessTokenLifespan** | **string** | Specify a time duration in milliseconds, seconds, minutes, hours. | [optional]
 **logoUri** | **string** | OAuth 2.0 Client Logo URI  A URL string referencing the client&#39;s logo. | [optional]

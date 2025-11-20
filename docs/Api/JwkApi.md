@@ -1,22 +1,22 @@
-# Ory\Hydra\Client\JwkApi
+# Scottbass3\Hydra\Client\JwkApi
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to http://localhost.
 
-| Method | HTTP request | Description |
-| ------------- | ------------- | ------------- |
-| [**createJsonWebKeySet()**](JwkApi.md#createJsonWebKeySet) | **POST** /admin/keys/{set} | Create JSON Web Key |
-| [**deleteJsonWebKey()**](JwkApi.md#deleteJsonWebKey) | **DELETE** /admin/keys/{set}/{kid} | Delete JSON Web Key |
-| [**deleteJsonWebKeySet()**](JwkApi.md#deleteJsonWebKeySet) | **DELETE** /admin/keys/{set} | Delete JSON Web Key Set |
-| [**getJsonWebKey()**](JwkApi.md#getJsonWebKey) | **GET** /admin/keys/{set}/{kid} | Get JSON Web Key |
-| [**getJsonWebKeySet()**](JwkApi.md#getJsonWebKeySet) | **GET** /admin/keys/{set} | Retrieve a JSON Web Key Set |
-| [**setJsonWebKey()**](JwkApi.md#setJsonWebKey) | **PUT** /admin/keys/{set}/{kid} | Set JSON Web Key |
-| [**setJsonWebKeySet()**](JwkApi.md#setJsonWebKeySet) | **PUT** /admin/keys/{set} | Update a JSON Web Key Set |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createJsonWebKeySet()**](JwkApi.md#createJsonWebKeySet) | **POST** /admin/keys/{set} | Create JSON Web Key
+[**deleteJsonWebKey()**](JwkApi.md#deleteJsonWebKey) | **DELETE** /admin/keys/{set}/{kid} | Delete JSON Web Key
+[**deleteJsonWebKeySet()**](JwkApi.md#deleteJsonWebKeySet) | **DELETE** /admin/keys/{set} | Delete JSON Web Key Set
+[**getJsonWebKey()**](JwkApi.md#getJsonWebKey) | **GET** /admin/keys/{set}/{kid} | Get JSON Web Key
+[**getJsonWebKeySet()**](JwkApi.md#getJsonWebKeySet) | **GET** /admin/keys/{set} | Retrieve a JSON Web Key Set
+[**setJsonWebKey()**](JwkApi.md#setJsonWebKey) | **PUT** /admin/keys/{set}/{kid} | Set JSON Web Key
+[**setJsonWebKeySet()**](JwkApi.md#setJsonWebKeySet) | **PUT** /admin/keys/{set} | Update a JSON Web Key Set
 
 
 ## `createJsonWebKeySet()`
 
 ```php
-createJsonWebKeySet($set, $createJsonWebKeySet): \Ory\Hydra\Client\Model\JsonWebKeySet
+createJsonWebKeySet($set, $createJsonWebKeySet): \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 ```
 
 Create JSON Web Key
@@ -31,13 +31,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | The JSON Web Key Set ID
-$createJsonWebKeySet = new \Ory\Hydra\Client\Model\CreateJsonWebKeySet(); // \Ory\Hydra\Client\Model\CreateJsonWebKeySet
+$createJsonWebKeySet = new \Scottbass3\Hydra\Client\Model\CreateJsonWebKeySet(); // \Scottbass3\Hydra\Client\Model\CreateJsonWebKeySet
 
 try {
     $result = $apiInstance->createJsonWebKeySet($set, $createJsonWebKeySet);
@@ -49,14 +49,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| The JSON Web Key Set ID | |
-| **createJsonWebKeySet** | [**\Ory\Hydra\Client\Model\CreateJsonWebKeySet**](../Model/CreateJsonWebKeySet.md)|  | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| The JSON Web Key Set ID |
+ **createJsonWebKeySet** | [**\Scottbass3\Hydra\Client\Model\CreateJsonWebKeySet**](../Model/CreateJsonWebKeySet.md)|  |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
 
 ### Authorization
 
@@ -89,9 +89,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | The JSON Web Key Set
@@ -106,10 +106,10 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| The JSON Web Key Set | |
-| **kid** | **string**| The JSON Web Key ID (kid) | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| The JSON Web Key Set |
+ **kid** | **string**| The JSON Web Key ID (kid) |
 
 ### Return type
 
@@ -146,9 +146,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | The JSON Web Key Set
@@ -162,9 +162,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| The JSON Web Key Set | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| The JSON Web Key Set |
 
 ### Return type
 
@@ -186,7 +186,7 @@ No authorization required
 ## `getJsonWebKey()`
 
 ```php
-getJsonWebKey($set, $kid): \Ory\Hydra\Client\Model\JsonWebKeySet
+getJsonWebKey($set, $kid): \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 ```
 
 Get JSON Web Key
@@ -201,9 +201,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | JSON Web Key Set ID
@@ -219,14 +219,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| JSON Web Key Set ID | |
-| **kid** | **string**| JSON Web Key ID | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| JSON Web Key Set ID |
+ **kid** | **string**| JSON Web Key ID |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ No authorization required
 ## `getJsonWebKeySet()`
 
 ```php
-getJsonWebKeySet($set): \Ory\Hydra\Client\Model\JsonWebKeySet
+getJsonWebKeySet($set): \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 ```
 
 Retrieve a JSON Web Key Set
@@ -259,9 +259,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | JSON Web Key Set ID
@@ -276,13 +276,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| JSON Web Key Set ID | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| JSON Web Key Set ID |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
 
 ### Authorization
 
@@ -300,7 +300,7 @@ No authorization required
 ## `setJsonWebKey()`
 
 ```php
-setJsonWebKey($set, $kid, $jsonWebKey): \Ory\Hydra\Client\Model\JsonWebKey
+setJsonWebKey($set, $kid, $jsonWebKey): \Scottbass3\Hydra\Client\Model\JsonWebKey
 ```
 
 Set JSON Web Key
@@ -315,14 +315,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | The JSON Web Key Set ID
 $kid = 'kid_example'; // string | JSON Web Key ID
-$jsonWebKey = new \Ory\Hydra\Client\Model\JsonWebKey(); // \Ory\Hydra\Client\Model\JsonWebKey
+$jsonWebKey = new \Scottbass3\Hydra\Client\Model\JsonWebKey(); // \Scottbass3\Hydra\Client\Model\JsonWebKey
 
 try {
     $result = $apiInstance->setJsonWebKey($set, $kid, $jsonWebKey);
@@ -334,15 +334,15 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| The JSON Web Key Set ID | |
-| **kid** | **string**| JSON Web Key ID | |
-| **jsonWebKey** | [**\Ory\Hydra\Client\Model\JsonWebKey**](../Model/JsonWebKey.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| The JSON Web Key Set ID |
+ **kid** | **string**| JSON Web Key ID |
+ **jsonWebKey** | [**\Scottbass3\Hydra\Client\Model\JsonWebKey**](../Model/JsonWebKey.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKey**](../Model/JsonWebKey.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKey**](../Model/JsonWebKey.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 ## `setJsonWebKeySet()`
 
 ```php
-setJsonWebKeySet($set, $jsonWebKeySet): \Ory\Hydra\Client\Model\JsonWebKeySet
+setJsonWebKeySet($set, $jsonWebKeySet): \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 ```
 
 Update a JSON Web Key Set
@@ -375,13 +375,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\JwkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\JwkApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $set = 'set_example'; // string | The JSON Web Key Set ID
-$jsonWebKeySet = new \Ory\Hydra\Client\Model\JsonWebKeySet(); // \Ory\Hydra\Client\Model\JsonWebKeySet
+$jsonWebKeySet = new \Scottbass3\Hydra\Client\Model\JsonWebKeySet(); // \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 
 try {
     $result = $apiInstance->setJsonWebKeySet($set, $jsonWebKeySet);
@@ -393,14 +393,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **set** | **string**| The JSON Web Key Set ID | |
-| **jsonWebKeySet** | [**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **set** | **string**| The JSON Web Key Set ID |
+ **jsonWebKeySet** | [**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
 
 ### Authorization
 

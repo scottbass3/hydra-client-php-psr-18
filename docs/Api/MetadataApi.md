@@ -1,18 +1,18 @@
-# Ory\Hydra\Client\MetadataApi
+# Scottbass3\Hydra\Client\MetadataApi
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to http://localhost.
 
-| Method | HTTP request | Description |
-| ------------- | ------------- | ------------- |
-| [**getVersion()**](MetadataApi.md#getVersion) | **GET** /version | Return Running Software Version. |
-| [**isAlive()**](MetadataApi.md#isAlive) | **GET** /health/alive | Check HTTP Server Status |
-| [**isReady()**](MetadataApi.md#isReady) | **GET** /health/ready | Check HTTP Server and Database Status |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**getVersion()**](MetadataApi.md#getVersion) | **GET** /version | Return Running Software Version.
+[**isAlive()**](MetadataApi.md#isAlive) | **GET** /health/alive | Check HTTP Server Status
+[**isReady()**](MetadataApi.md#isReady) | **GET** /health/ready | Check HTTP Server and Database Status
 
 
 ## `getVersion()`
 
 ```php
-getVersion(): \Ory\Hydra\Client\Model\GetVersion200Response
+getVersion(): \Scottbass3\Hydra\Client\Model\GetVersion200Response
 ```
 
 Return Running Software Version.
@@ -27,9 +27,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\MetadataApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\MetadataApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -47,7 +47,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\GetVersion200Response**](../Model/GetVersion200Response.md)
+[**\Scottbass3\Hydra\Client\Model\GetVersion200Response**](../Model/GetVersion200Response.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ No authorization required
 ## `isAlive()`
 
 ```php
-isAlive(): \Ory\Hydra\Client\Model\HealthStatus
+isAlive(): \Scottbass3\Hydra\Client\Model\HealthStatus
 ```
 
 Check HTTP Server Status
@@ -80,9 +80,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\MetadataApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\MetadataApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\HealthStatus**](../Model/HealthStatus.md)
+[**\Scottbass3\Hydra\Client\Model\HealthStatus**](../Model/HealthStatus.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ No authorization required
 ## `isReady()`
 
 ```php
-isReady(): \Ory\Hydra\Client\Model\IsReady200Response
+isReady(): \Scottbass3\Hydra\Client\Model\IsReady200Response
 ```
 
 Check HTTP Server and Database Status
@@ -133,9 +133,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\MetadataApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\MetadataApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -153,7 +153,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\IsReady200Response**](../Model/IsReady200Response.md)
+[**\Scottbass3\Hydra\Client\Model\IsReady200Response**](../Model/IsReady200Response.md)
 
 ### Authorization
 

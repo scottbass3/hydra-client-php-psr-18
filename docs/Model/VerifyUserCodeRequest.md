@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](OAuth2Client.md) |  | [optional]
+**client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](OAuth2Client.md) |  | [optional]
 **deviceCodeRequestId** | **string** |  | [optional]
 **requestUrl** | **string** | RequestURL is the original Device Authorization URL requested. | [optional]
 **requestedAccessTokenAudience** | **string[]** |  | [optional]

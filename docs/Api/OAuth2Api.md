@@ -1,46 +1,46 @@
-# Ory\Hydra\Client\OAuth2Api
+# Scottbass3\Hydra\Client\OAuth2Api
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to http://localhost.
 
-| Method | HTTP request | Description |
-| ------------- | ------------- | ------------- |
-| [**acceptOAuth2ConsentRequest()**](OAuth2Api.md#acceptOAuth2ConsentRequest) | **PUT** /admin/oauth2/auth/requests/consent/accept | Accept OAuth 2.0 Consent Request |
-| [**acceptOAuth2LoginRequest()**](OAuth2Api.md#acceptOAuth2LoginRequest) | **PUT** /admin/oauth2/auth/requests/login/accept | Accept OAuth 2.0 Login Request |
-| [**acceptOAuth2LogoutRequest()**](OAuth2Api.md#acceptOAuth2LogoutRequest) | **PUT** /admin/oauth2/auth/requests/logout/accept | Accept OAuth 2.0 Session Logout Request |
-| [**acceptUserCodeRequest()**](OAuth2Api.md#acceptUserCodeRequest) | **PUT** /admin/oauth2/auth/requests/device/accept | Accepts a device grant user_code request |
-| [**createOAuth2Client()**](OAuth2Api.md#createOAuth2Client) | **POST** /admin/clients | Create OAuth 2.0 Client |
-| [**deleteOAuth2Client()**](OAuth2Api.md#deleteOAuth2Client) | **DELETE** /admin/clients/{id} | Delete OAuth 2.0 Client |
-| [**deleteOAuth2Token()**](OAuth2Api.md#deleteOAuth2Token) | **DELETE** /admin/oauth2/tokens | Delete OAuth 2.0 Access Tokens from specific OAuth 2.0 Client |
-| [**deleteTrustedOAuth2JwtGrantIssuer()**](OAuth2Api.md#deleteTrustedOAuth2JwtGrantIssuer) | **DELETE** /admin/trust/grants/jwt-bearer/issuers/{id} | Delete Trusted OAuth2 JWT Bearer Grant Type Issuer |
-| [**getOAuth2Client()**](OAuth2Api.md#getOAuth2Client) | **GET** /admin/clients/{id} | Get an OAuth 2.0 Client |
-| [**getOAuth2ConsentRequest()**](OAuth2Api.md#getOAuth2ConsentRequest) | **GET** /admin/oauth2/auth/requests/consent | Get OAuth 2.0 Consent Request |
-| [**getOAuth2LoginRequest()**](OAuth2Api.md#getOAuth2LoginRequest) | **GET** /admin/oauth2/auth/requests/login | Get OAuth 2.0 Login Request |
-| [**getOAuth2LogoutRequest()**](OAuth2Api.md#getOAuth2LogoutRequest) | **GET** /admin/oauth2/auth/requests/logout | Get OAuth 2.0 Session Logout Request |
-| [**getTrustedOAuth2JwtGrantIssuer()**](OAuth2Api.md#getTrustedOAuth2JwtGrantIssuer) | **GET** /admin/trust/grants/jwt-bearer/issuers/{id} | Get Trusted OAuth2 JWT Bearer Grant Type Issuer |
-| [**introspectOAuth2Token()**](OAuth2Api.md#introspectOAuth2Token) | **POST** /admin/oauth2/introspect | Introspect OAuth2 Access and Refresh Tokens |
-| [**listOAuth2Clients()**](OAuth2Api.md#listOAuth2Clients) | **GET** /admin/clients | List OAuth 2.0 Clients |
-| [**listOAuth2ConsentSessions()**](OAuth2Api.md#listOAuth2ConsentSessions) | **GET** /admin/oauth2/auth/sessions/consent | List OAuth 2.0 Consent Sessions of a Subject |
-| [**listTrustedOAuth2JwtGrantIssuers()**](OAuth2Api.md#listTrustedOAuth2JwtGrantIssuers) | **GET** /admin/trust/grants/jwt-bearer/issuers | List Trusted OAuth2 JWT Bearer Grant Type Issuers |
-| [**oAuth2Authorize()**](OAuth2Api.md#oAuth2Authorize) | **GET** /oauth2/auth | OAuth 2.0 Authorize Endpoint |
-| [**oAuth2DeviceFlow()**](OAuth2Api.md#oAuth2DeviceFlow) | **POST** /oauth2/device/auth | The OAuth 2.0 Device Authorize Endpoint |
-| [**oauth2TokenExchange()**](OAuth2Api.md#oauth2TokenExchange) | **POST** /oauth2/token | The OAuth 2.0 Token Endpoint |
-| [**patchOAuth2Client()**](OAuth2Api.md#patchOAuth2Client) | **PATCH** /admin/clients/{id} | Patch OAuth 2.0 Client |
-| [**performOAuth2DeviceVerificationFlow()**](OAuth2Api.md#performOAuth2DeviceVerificationFlow) | **GET** /oauth2/device/verify | OAuth 2.0 Device Verification Endpoint |
-| [**rejectOAuth2ConsentRequest()**](OAuth2Api.md#rejectOAuth2ConsentRequest) | **PUT** /admin/oauth2/auth/requests/consent/reject | Reject OAuth 2.0 Consent Request |
-| [**rejectOAuth2LoginRequest()**](OAuth2Api.md#rejectOAuth2LoginRequest) | **PUT** /admin/oauth2/auth/requests/login/reject | Reject OAuth 2.0 Login Request |
-| [**rejectOAuth2LogoutRequest()**](OAuth2Api.md#rejectOAuth2LogoutRequest) | **PUT** /admin/oauth2/auth/requests/logout/reject | Reject OAuth 2.0 Session Logout Request |
-| [**revokeOAuth2ConsentSessions()**](OAuth2Api.md#revokeOAuth2ConsentSessions) | **DELETE** /admin/oauth2/auth/sessions/consent | Revoke OAuth 2.0 Consent Sessions of a Subject |
-| [**revokeOAuth2LoginSessions()**](OAuth2Api.md#revokeOAuth2LoginSessions) | **DELETE** /admin/oauth2/auth/sessions/login | Revokes OAuth 2.0 Login Sessions by either a Subject or a SessionID |
-| [**revokeOAuth2Token()**](OAuth2Api.md#revokeOAuth2Token) | **POST** /oauth2/revoke | Revoke OAuth 2.0 Access or Refresh Token |
-| [**setOAuth2Client()**](OAuth2Api.md#setOAuth2Client) | **PUT** /admin/clients/{id} | Set OAuth 2.0 Client |
-| [**setOAuth2ClientLifespans()**](OAuth2Api.md#setOAuth2ClientLifespans) | **PUT** /admin/clients/{id}/lifespans | Set OAuth2 Client Token Lifespans |
-| [**trustOAuth2JwtGrantIssuer()**](OAuth2Api.md#trustOAuth2JwtGrantIssuer) | **POST** /admin/trust/grants/jwt-bearer/issuers | Trust OAuth2 JWT Bearer Grant Type Issuer |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**acceptOAuth2ConsentRequest()**](OAuth2Api.md#acceptOAuth2ConsentRequest) | **PUT** /admin/oauth2/auth/requests/consent/accept | Accept OAuth 2.0 Consent Request
+[**acceptOAuth2LoginRequest()**](OAuth2Api.md#acceptOAuth2LoginRequest) | **PUT** /admin/oauth2/auth/requests/login/accept | Accept OAuth 2.0 Login Request
+[**acceptOAuth2LogoutRequest()**](OAuth2Api.md#acceptOAuth2LogoutRequest) | **PUT** /admin/oauth2/auth/requests/logout/accept | Accept OAuth 2.0 Session Logout Request
+[**acceptUserCodeRequest()**](OAuth2Api.md#acceptUserCodeRequest) | **PUT** /admin/oauth2/auth/requests/device/accept | Accepts a device grant user_code request
+[**createOAuth2Client()**](OAuth2Api.md#createOAuth2Client) | **POST** /admin/clients | Create OAuth 2.0 Client
+[**deleteOAuth2Client()**](OAuth2Api.md#deleteOAuth2Client) | **DELETE** /admin/clients/{id} | Delete OAuth 2.0 Client
+[**deleteOAuth2Token()**](OAuth2Api.md#deleteOAuth2Token) | **DELETE** /admin/oauth2/tokens | Delete OAuth 2.0 Access Tokens from specific OAuth 2.0 Client
+[**deleteTrustedOAuth2JwtGrantIssuer()**](OAuth2Api.md#deleteTrustedOAuth2JwtGrantIssuer) | **DELETE** /admin/trust/grants/jwt-bearer/issuers/{id} | Delete Trusted OAuth2 JWT Bearer Grant Type Issuer
+[**getOAuth2Client()**](OAuth2Api.md#getOAuth2Client) | **GET** /admin/clients/{id} | Get an OAuth 2.0 Client
+[**getOAuth2ConsentRequest()**](OAuth2Api.md#getOAuth2ConsentRequest) | **GET** /admin/oauth2/auth/requests/consent | Get OAuth 2.0 Consent Request
+[**getOAuth2LoginRequest()**](OAuth2Api.md#getOAuth2LoginRequest) | **GET** /admin/oauth2/auth/requests/login | Get OAuth 2.0 Login Request
+[**getOAuth2LogoutRequest()**](OAuth2Api.md#getOAuth2LogoutRequest) | **GET** /admin/oauth2/auth/requests/logout | Get OAuth 2.0 Session Logout Request
+[**getTrustedOAuth2JwtGrantIssuer()**](OAuth2Api.md#getTrustedOAuth2JwtGrantIssuer) | **GET** /admin/trust/grants/jwt-bearer/issuers/{id} | Get Trusted OAuth2 JWT Bearer Grant Type Issuer
+[**introspectOAuth2Token()**](OAuth2Api.md#introspectOAuth2Token) | **POST** /admin/oauth2/introspect | Introspect OAuth2 Access and Refresh Tokens
+[**listOAuth2Clients()**](OAuth2Api.md#listOAuth2Clients) | **GET** /admin/clients | List OAuth 2.0 Clients
+[**listOAuth2ConsentSessions()**](OAuth2Api.md#listOAuth2ConsentSessions) | **GET** /admin/oauth2/auth/sessions/consent | List OAuth 2.0 Consent Sessions of a Subject
+[**listTrustedOAuth2JwtGrantIssuers()**](OAuth2Api.md#listTrustedOAuth2JwtGrantIssuers) | **GET** /admin/trust/grants/jwt-bearer/issuers | List Trusted OAuth2 JWT Bearer Grant Type Issuers
+[**oAuth2Authorize()**](OAuth2Api.md#oAuth2Authorize) | **GET** /oauth2/auth | OAuth 2.0 Authorize Endpoint
+[**oAuth2DeviceFlow()**](OAuth2Api.md#oAuth2DeviceFlow) | **POST** /oauth2/device/auth | The OAuth 2.0 Device Authorize Endpoint
+[**oauth2TokenExchange()**](OAuth2Api.md#oauth2TokenExchange) | **POST** /oauth2/token | The OAuth 2.0 Token Endpoint
+[**patchOAuth2Client()**](OAuth2Api.md#patchOAuth2Client) | **PATCH** /admin/clients/{id} | Patch OAuth 2.0 Client
+[**performOAuth2DeviceVerificationFlow()**](OAuth2Api.md#performOAuth2DeviceVerificationFlow) | **GET** /oauth2/device/verify | OAuth 2.0 Device Verification Endpoint
+[**rejectOAuth2ConsentRequest()**](OAuth2Api.md#rejectOAuth2ConsentRequest) | **PUT** /admin/oauth2/auth/requests/consent/reject | Reject OAuth 2.0 Consent Request
+[**rejectOAuth2LoginRequest()**](OAuth2Api.md#rejectOAuth2LoginRequest) | **PUT** /admin/oauth2/auth/requests/login/reject | Reject OAuth 2.0 Login Request
+[**rejectOAuth2LogoutRequest()**](OAuth2Api.md#rejectOAuth2LogoutRequest) | **PUT** /admin/oauth2/auth/requests/logout/reject | Reject OAuth 2.0 Session Logout Request
+[**revokeOAuth2ConsentSessions()**](OAuth2Api.md#revokeOAuth2ConsentSessions) | **DELETE** /admin/oauth2/auth/sessions/consent | Revoke OAuth 2.0 Consent Sessions of a Subject
+[**revokeOAuth2LoginSessions()**](OAuth2Api.md#revokeOAuth2LoginSessions) | **DELETE** /admin/oauth2/auth/sessions/login | Revokes OAuth 2.0 Login Sessions by either a Subject or a SessionID
+[**revokeOAuth2Token()**](OAuth2Api.md#revokeOAuth2Token) | **POST** /oauth2/revoke | Revoke OAuth 2.0 Access or Refresh Token
+[**setOAuth2Client()**](OAuth2Api.md#setOAuth2Client) | **PUT** /admin/clients/{id} | Set OAuth 2.0 Client
+[**setOAuth2ClientLifespans()**](OAuth2Api.md#setOAuth2ClientLifespans) | **PUT** /admin/clients/{id}/lifespans | Set OAuth2 Client Token Lifespans
+[**trustOAuth2JwtGrantIssuer()**](OAuth2Api.md#trustOAuth2JwtGrantIssuer) | **POST** /admin/trust/grants/jwt-bearer/issuers | Trust OAuth2 JWT Bearer Grant Type Issuer
 
 
 ## `acceptOAuth2ConsentRequest()`
 
 ```php
-acceptOAuth2ConsentRequest($consentChallenge, $acceptOAuth2ConsentRequest): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+acceptOAuth2ConsentRequest($consentChallenge, $acceptOAuth2ConsentRequest): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Accept OAuth 2.0 Consent Request
@@ -55,13 +55,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $consentChallenge = 'consentChallenge_example'; // string | OAuth 2.0 Consent Request Challenge
-$acceptOAuth2ConsentRequest = new \Ory\Hydra\Client\Model\AcceptOAuth2ConsentRequest(); // \Ory\Hydra\Client\Model\AcceptOAuth2ConsentRequest
+$acceptOAuth2ConsentRequest = new \Scottbass3\Hydra\Client\Model\AcceptOAuth2ConsentRequest(); // \Scottbass3\Hydra\Client\Model\AcceptOAuth2ConsentRequest
 
 try {
     $result = $apiInstance->acceptOAuth2ConsentRequest($consentChallenge, $acceptOAuth2ConsentRequest);
@@ -73,14 +73,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge | |
-| **acceptOAuth2ConsentRequest** | [**\Ory\Hydra\Client\Model\AcceptOAuth2ConsentRequest**](../Model/AcceptOAuth2ConsentRequest.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge |
+ **acceptOAuth2ConsentRequest** | [**\Scottbass3\Hydra\Client\Model\AcceptOAuth2ConsentRequest**](../Model/AcceptOAuth2ConsentRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ No authorization required
 ## `acceptOAuth2LoginRequest()`
 
 ```php
-acceptOAuth2LoginRequest($loginChallenge, $acceptOAuth2LoginRequest): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+acceptOAuth2LoginRequest($loginChallenge, $acceptOAuth2LoginRequest): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Accept OAuth 2.0 Login Request
@@ -113,13 +113,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $loginChallenge = 'loginChallenge_example'; // string | OAuth 2.0 Login Request Challenge
-$acceptOAuth2LoginRequest = new \Ory\Hydra\Client\Model\AcceptOAuth2LoginRequest(); // \Ory\Hydra\Client\Model\AcceptOAuth2LoginRequest
+$acceptOAuth2LoginRequest = new \Scottbass3\Hydra\Client\Model\AcceptOAuth2LoginRequest(); // \Scottbass3\Hydra\Client\Model\AcceptOAuth2LoginRequest
 
 try {
     $result = $apiInstance->acceptOAuth2LoginRequest($loginChallenge, $acceptOAuth2LoginRequest);
@@ -131,14 +131,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge | |
-| **acceptOAuth2LoginRequest** | [**\Ory\Hydra\Client\Model\AcceptOAuth2LoginRequest**](../Model/AcceptOAuth2LoginRequest.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge |
+ **acceptOAuth2LoginRequest** | [**\Scottbass3\Hydra\Client\Model\AcceptOAuth2LoginRequest**](../Model/AcceptOAuth2LoginRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 ## `acceptOAuth2LogoutRequest()`
 
 ```php
-acceptOAuth2LogoutRequest($logoutChallenge): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+acceptOAuth2LogoutRequest($logoutChallenge): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Accept OAuth 2.0 Session Logout Request
@@ -171,9 +171,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $logoutChallenge = 'logoutChallenge_example'; // string | OAuth 2.0 Logout Request Challenge
@@ -188,13 +188,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **logoutChallenge** | **string**| OAuth 2.0 Logout Request Challenge | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **logoutChallenge** | **string**| OAuth 2.0 Logout Request Challenge |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ No authorization required
 ## `acceptUserCodeRequest()`
 
 ```php
-acceptUserCodeRequest($deviceChallenge, $acceptDeviceUserCodeRequest): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+acceptUserCodeRequest($deviceChallenge, $acceptDeviceUserCodeRequest): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Accepts a device grant user_code request
@@ -227,13 +227,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $deviceChallenge = 'deviceChallenge_example'; // string
-$acceptDeviceUserCodeRequest = new \Ory\Hydra\Client\Model\AcceptDeviceUserCodeRequest(); // \Ory\Hydra\Client\Model\AcceptDeviceUserCodeRequest
+$acceptDeviceUserCodeRequest = new \Scottbass3\Hydra\Client\Model\AcceptDeviceUserCodeRequest(); // \Scottbass3\Hydra\Client\Model\AcceptDeviceUserCodeRequest
 
 try {
     $result = $apiInstance->acceptUserCodeRequest($deviceChallenge, $acceptDeviceUserCodeRequest);
@@ -245,14 +245,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **deviceChallenge** | **string**|  | |
-| **acceptDeviceUserCodeRequest** | [**\Ory\Hydra\Client\Model\AcceptDeviceUserCodeRequest**](../Model/AcceptDeviceUserCodeRequest.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **deviceChallenge** | **string**|  |
+ **acceptDeviceUserCodeRequest** | [**\Scottbass3\Hydra\Client\Model\AcceptDeviceUserCodeRequest**](../Model/AcceptDeviceUserCodeRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 ## `createOAuth2Client()`
 
 ```php
-createOAuth2Client($oAuth2Client): \Ory\Hydra\Client\Model\OAuth2Client
+createOAuth2Client($oAuth2Client): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Create OAuth 2.0 Client
@@ -285,12 +285,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
-$oAuth2Client = new \Ory\Hydra\Client\Model\OAuth2Client(); // \Ory\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
+$oAuth2Client = new \Scottbass3\Hydra\Client\Model\OAuth2Client(); // \Scottbass3\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
 
 try {
     $result = $apiInstance->createOAuth2Client($oAuth2Client);
@@ -302,13 +302,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **oAuth2Client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oAuth2Client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -341,9 +341,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | The id of the OAuth 2.0 Client.
@@ -357,9 +357,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the OAuth 2.0 Client. | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the OAuth 2.0 Client. |
 
 ### Return type
 
@@ -396,9 +396,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $clientId = 'clientId_example'; // string | OAuth 2.0 Client ID
@@ -412,9 +412,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **clientId** | **string**| OAuth 2.0 Client ID | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **clientId** | **string**| OAuth 2.0 Client ID |
 
 ### Return type
 
@@ -451,9 +451,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | The id of the desired grant
@@ -467,9 +467,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the desired grant | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the desired grant |
 
 ### Return type
 
@@ -491,7 +491,7 @@ No authorization required
 ## `getOAuth2Client()`
 
 ```php
-getOAuth2Client($id): \Ory\Hydra\Client\Model\OAuth2Client
+getOAuth2Client($id): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Get an OAuth 2.0 Client
@@ -506,9 +506,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | The id of the OAuth 2.0 Client.
@@ -523,13 +523,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the OAuth 2.0 Client. | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the OAuth 2.0 Client. |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -547,7 +547,7 @@ No authorization required
 ## `getOAuth2ConsentRequest()`
 
 ```php
-getOAuth2ConsentRequest($consentChallenge): \Ory\Hydra\Client\Model\OAuth2ConsentRequest
+getOAuth2ConsentRequest($consentChallenge): \Scottbass3\Hydra\Client\Model\OAuth2ConsentRequest
 ```
 
 Get OAuth 2.0 Consent Request
@@ -562,9 +562,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $consentChallenge = 'consentChallenge_example'; // string | OAuth 2.0 Consent Request Challenge
@@ -579,13 +579,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2ConsentRequest**](../Model/OAuth2ConsentRequest.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2ConsentRequest**](../Model/OAuth2ConsentRequest.md)
 
 ### Authorization
 
@@ -603,7 +603,7 @@ No authorization required
 ## `getOAuth2LoginRequest()`
 
 ```php
-getOAuth2LoginRequest($loginChallenge): \Ory\Hydra\Client\Model\OAuth2LoginRequest
+getOAuth2LoginRequest($loginChallenge): \Scottbass3\Hydra\Client\Model\OAuth2LoginRequest
 ```
 
 Get OAuth 2.0 Login Request
@@ -618,9 +618,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $loginChallenge = 'loginChallenge_example'; // string | OAuth 2.0 Login Request Challenge
@@ -635,13 +635,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2LoginRequest**](../Model/OAuth2LoginRequest.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2LoginRequest**](../Model/OAuth2LoginRequest.md)
 
 ### Authorization
 
@@ -659,7 +659,7 @@ No authorization required
 ## `getOAuth2LogoutRequest()`
 
 ```php
-getOAuth2LogoutRequest($logoutChallenge): \Ory\Hydra\Client\Model\OAuth2LogoutRequest
+getOAuth2LogoutRequest($logoutChallenge): \Scottbass3\Hydra\Client\Model\OAuth2LogoutRequest
 ```
 
 Get OAuth 2.0 Session Logout Request
@@ -674,9 +674,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $logoutChallenge = 'logoutChallenge_example'; // string
@@ -691,13 +691,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **logoutChallenge** | **string**|  | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **logoutChallenge** | **string**|  |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2LogoutRequest**](../Model/OAuth2LogoutRequest.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2LogoutRequest**](../Model/OAuth2LogoutRequest.md)
 
 ### Authorization
 
@@ -715,7 +715,7 @@ No authorization required
 ## `getTrustedOAuth2JwtGrantIssuer()`
 
 ```php
-getTrustedOAuth2JwtGrantIssuer($id): \Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer
+getTrustedOAuth2JwtGrantIssuer($id): \Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer
 ```
 
 Get Trusted OAuth2 JWT Bearer Grant Type Issuer
@@ -730,9 +730,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | The id of the desired grant
@@ -747,13 +747,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the desired grant | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the desired grant |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
 
 ### Authorization
 
@@ -771,7 +771,7 @@ No authorization required
 ## `introspectOAuth2Token()`
 
 ```php
-introspectOAuth2Token($token, $scope): \Ory\Hydra\Client\Model\IntrospectedOAuth2Token
+introspectOAuth2Token($token, $scope): \Scottbass3\Hydra\Client\Model\IntrospectedOAuth2Token
 ```
 
 Introspect OAuth2 Access and Refresh Tokens
@@ -786,9 +786,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $token = 'token_example'; // string | The string value of the token. For access tokens, this is the \\\"access_token\\\" value returned from the token endpoint defined in OAuth 2.0. For refresh tokens, this is the \\\"refresh_token\\\" value returned.
@@ -804,14 +804,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **token** | **string**| The string value of the token. For access tokens, this is the \\\&quot;access_token\\\&quot; value returned from the token endpoint defined in OAuth 2.0. For refresh tokens, this is the \\\&quot;refresh_token\\\&quot; value returned. | |
-| **scope** | **string**| An optional, space separated list of required scopes. If the access token was not granted one of the scopes, the result of active will be false. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string**| The string value of the token. For access tokens, this is the \\\&quot;access_token\\\&quot; value returned from the token endpoint defined in OAuth 2.0. For refresh tokens, this is the \\\&quot;refresh_token\\\&quot; value returned. |
+ **scope** | **string**| An optional, space separated list of required scopes. If the access token was not granted one of the scopes, the result of active will be false. | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\IntrospectedOAuth2Token**](../Model/IntrospectedOAuth2Token.md)
+[**\Scottbass3\Hydra\Client\Model\IntrospectedOAuth2Token**](../Model/IntrospectedOAuth2Token.md)
 
 ### Authorization
 
@@ -829,7 +829,7 @@ No authorization required
 ## `listOAuth2Clients()`
 
 ```php
-listOAuth2Clients($pageSize, $pageToken, $clientName, $owner): \Ory\Hydra\Client\Model\OAuth2Client[]
+listOAuth2Clients($pageSize, $pageToken, $clientName, $owner): \Scottbass3\Hydra\Client\Model\OAuth2Client[]
 ```
 
 List OAuth 2.0 Clients
@@ -844,9 +844,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $pageSize = 250; // int | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
@@ -864,16 +864,16 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
-| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
-| **clientName** | **string**| The name of the clients to filter by. | [optional] |
-| **owner** | **string**| The owner of the clients to filter by. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250]
+ **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional]
+ **clientName** | **string**| The name of the clients to filter by. | [optional]
+ **owner** | **string**| The owner of the clients to filter by. | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client[]**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client[]**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -891,7 +891,7 @@ No authorization required
 ## `listOAuth2ConsentSessions()`
 
 ```php
-listOAuth2ConsentSessions($subject, $pageSize, $pageToken, $loginSessionId): \Ory\Hydra\Client\Model\OAuth2ConsentSession[]
+listOAuth2ConsentSessions($subject, $pageSize, $pageToken, $loginSessionId): \Scottbass3\Hydra\Client\Model\OAuth2ConsentSession[]
 ```
 
 List OAuth 2.0 Consent Sessions of a Subject
@@ -906,9 +906,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $subject = 'subject_example'; // string | The subject to list the consent sessions for.
@@ -926,16 +926,16 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subject** | **string**| The subject to list the consent sessions for. | |
-| **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
-| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to &#39;1&#39;] |
-| **loginSessionId** | **string**| The login session id to list the consent sessions for. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subject** | **string**| The subject to list the consent sessions for. |
+ **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250]
+ **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to &#39;1&#39;]
+ **loginSessionId** | **string**| The login session id to list the consent sessions for. | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2ConsentSession[]**](../Model/OAuth2ConsentSession.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2ConsentSession[]**](../Model/OAuth2ConsentSession.md)
 
 ### Authorization
 
@@ -953,7 +953,7 @@ No authorization required
 ## `listTrustedOAuth2JwtGrantIssuers()`
 
 ```php
-listTrustedOAuth2JwtGrantIssuers($pageSize, $pageToken, $issuer): \Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]
+listTrustedOAuth2JwtGrantIssuers($pageSize, $pageToken, $issuer): \Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]
 ```
 
 List Trusted OAuth2 JWT Bearer Grant Type Issuers
@@ -968,9 +968,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $pageSize = 250; // int | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
@@ -987,15 +987,15 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
-| **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
-| **issuer** | **string**| If optional \&quot;issuer\&quot; is supplied, only jwt-bearer grants with this issuer will be returned. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250]
+ **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional]
+ **issuer** | **string**| If optional \&quot;issuer\&quot; is supplied, only jwt-bearer grants with this issuer will be returned. | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]**](../Model/TrustedOAuth2JwtGrantIssuer.md)
 
 ### Authorization
 
@@ -1013,7 +1013,7 @@ No authorization required
 ## `oAuth2Authorize()`
 
 ```php
-oAuth2Authorize(): \Ory\Hydra\Client\Model\ErrorOAuth2
+oAuth2Authorize(): \Scottbass3\Hydra\Client\Model\ErrorOAuth2
 ```
 
 OAuth 2.0 Authorize Endpoint
@@ -1028,9 +1028,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -1048,7 +1048,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+[**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1066,7 +1066,7 @@ No authorization required
 ## `oAuth2DeviceFlow()`
 
 ```php
-oAuth2DeviceFlow(): \Ory\Hydra\Client\Model\DeviceAuthorization
+oAuth2DeviceFlow(): \Scottbass3\Hydra\Client\Model\DeviceAuthorization
 ```
 
 The OAuth 2.0 Device Authorize Endpoint
@@ -1081,9 +1081,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -1101,7 +1101,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\DeviceAuthorization**](../Model/DeviceAuthorization.md)
+[**\Scottbass3\Hydra\Client\Model\DeviceAuthorization**](../Model/DeviceAuthorization.md)
 
 ### Authorization
 
@@ -1119,7 +1119,7 @@ No authorization required
 ## `oauth2TokenExchange()`
 
 ```php
-oauth2TokenExchange($grantType, $clientId, $code, $redirectUri, $refreshToken): \Ory\Hydra\Client\Model\OAuth2TokenExchange
+oauth2TokenExchange($grantType, $clientId, $code, $redirectUri, $refreshToken): \Scottbass3\Hydra\Client\Model\OAuth2TokenExchange
 ```
 
 The OAuth 2.0 Token Endpoint
@@ -1134,17 +1134,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
@@ -1164,17 +1164,17 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **grantType** | **string**|  | |
-| **clientId** | **string**|  | [optional] |
-| **code** | **string**|  | [optional] |
-| **redirectUri** | **string**|  | [optional] |
-| **refreshToken** | **string**|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **grantType** | **string**|  |
+ **clientId** | **string**|  | [optional]
+ **code** | **string**|  | [optional]
+ **redirectUri** | **string**|  | [optional]
+ **refreshToken** | **string**|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2TokenExchange**](../Model/OAuth2TokenExchange.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2TokenExchange**](../Model/OAuth2TokenExchange.md)
 
 ### Authorization
 
@@ -1192,7 +1192,7 @@ try {
 ## `patchOAuth2Client()`
 
 ```php
-patchOAuth2Client($id, $jsonPatch): \Ory\Hydra\Client\Model\OAuth2Client
+patchOAuth2Client($id, $jsonPatch): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Patch OAuth 2.0 Client
@@ -1207,13 +1207,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | The id of the OAuth 2.0 Client.
-$jsonPatch = array(new \Ory\Hydra\Client\Model\JsonPatch()); // \Ory\Hydra\Client\Model\JsonPatch[] | OAuth 2.0 Client JSON Patch Body
+$jsonPatch = array(new \Scottbass3\Hydra\Client\Model\JsonPatch()); // \Scottbass3\Hydra\Client\Model\JsonPatch[] | OAuth 2.0 Client JSON Patch Body
 
 try {
     $result = $apiInstance->patchOAuth2Client($id, $jsonPatch);
@@ -1225,14 +1225,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the OAuth 2.0 Client. | |
-| **jsonPatch** | [**\Ory\Hydra\Client\Model\JsonPatch[]**](../Model/JsonPatch.md)| OAuth 2.0 Client JSON Patch Body | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the OAuth 2.0 Client. |
+ **jsonPatch** | [**\Scottbass3\Hydra\Client\Model\JsonPatch[]**](../Model/JsonPatch.md)| OAuth 2.0 Client JSON Patch Body |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -1250,7 +1250,7 @@ No authorization required
 ## `performOAuth2DeviceVerificationFlow()`
 
 ```php
-performOAuth2DeviceVerificationFlow(): \Ory\Hydra\Client\Model\ErrorOAuth2
+performOAuth2DeviceVerificationFlow(): \Scottbass3\Hydra\Client\Model\ErrorOAuth2
 ```
 
 OAuth 2.0 Device Verification Endpoint
@@ -1265,9 +1265,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -1285,7 +1285,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+[**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1303,7 +1303,7 @@ No authorization required
 ## `rejectOAuth2ConsentRequest()`
 
 ```php
-rejectOAuth2ConsentRequest($consentChallenge, $rejectOAuth2Request): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+rejectOAuth2ConsentRequest($consentChallenge, $rejectOAuth2Request): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Reject OAuth 2.0 Consent Request
@@ -1318,13 +1318,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $consentChallenge = 'consentChallenge_example'; // string | OAuth 2.0 Consent Request Challenge
-$rejectOAuth2Request = new \Ory\Hydra\Client\Model\RejectOAuth2Request(); // \Ory\Hydra\Client\Model\RejectOAuth2Request
+$rejectOAuth2Request = new \Scottbass3\Hydra\Client\Model\RejectOAuth2Request(); // \Scottbass3\Hydra\Client\Model\RejectOAuth2Request
 
 try {
     $result = $apiInstance->rejectOAuth2ConsentRequest($consentChallenge, $rejectOAuth2Request);
@@ -1336,14 +1336,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge | |
-| **rejectOAuth2Request** | [**\Ory\Hydra\Client\Model\RejectOAuth2Request**](../Model/RejectOAuth2Request.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consentChallenge** | **string**| OAuth 2.0 Consent Request Challenge |
+ **rejectOAuth2Request** | [**\Scottbass3\Hydra\Client\Model\RejectOAuth2Request**](../Model/RejectOAuth2Request.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -1361,7 +1361,7 @@ No authorization required
 ## `rejectOAuth2LoginRequest()`
 
 ```php
-rejectOAuth2LoginRequest($loginChallenge, $rejectOAuth2Request): \Ory\Hydra\Client\Model\OAuth2RedirectTo
+rejectOAuth2LoginRequest($loginChallenge, $rejectOAuth2Request): \Scottbass3\Hydra\Client\Model\OAuth2RedirectTo
 ```
 
 Reject OAuth 2.0 Login Request
@@ -1376,13 +1376,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $loginChallenge = 'loginChallenge_example'; // string | OAuth 2.0 Login Request Challenge
-$rejectOAuth2Request = new \Ory\Hydra\Client\Model\RejectOAuth2Request(); // \Ory\Hydra\Client\Model\RejectOAuth2Request
+$rejectOAuth2Request = new \Scottbass3\Hydra\Client\Model\RejectOAuth2Request(); // \Scottbass3\Hydra\Client\Model\RejectOAuth2Request
 
 try {
     $result = $apiInstance->rejectOAuth2LoginRequest($loginChallenge, $rejectOAuth2Request);
@@ -1394,14 +1394,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge | |
-| **rejectOAuth2Request** | [**\Ory\Hydra\Client\Model\RejectOAuth2Request**](../Model/RejectOAuth2Request.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **loginChallenge** | **string**| OAuth 2.0 Login Request Challenge |
+ **rejectOAuth2Request** | [**\Scottbass3\Hydra\Client\Model\RejectOAuth2Request**](../Model/RejectOAuth2Request.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
 
 ### Authorization
 
@@ -1434,9 +1434,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $logoutChallenge = 'logoutChallenge_example'; // string
@@ -1450,9 +1450,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **logoutChallenge** | **string**|  | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **logoutChallenge** | **string**|  |
 
 ### Return type
 
@@ -1489,9 +1489,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $subject = 'subject_example'; // string | OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted.
@@ -1508,12 +1508,12 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subject** | **string**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | [optional] |
-| **client** | **string**| OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID. | [optional] |
-| **consentRequestId** | **string**| Consent Request ID  If set, revoke all token chains derived from this particular consent request ID. | [optional] |
-| **all** | **bool**| Revoke All Consent Sessions  If set to &#x60;true&#x60; deletes all consent sessions by the Subject that have been granted. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subject** | **string**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | [optional]
+ **client** | **string**| OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID. | [optional]
+ **consentRequestId** | **string**| Consent Request ID  If set, revoke all token chains derived from this particular consent request ID. | [optional]
+ **all** | **bool**| Revoke All Consent Sessions  If set to &#x60;true&#x60; deletes all consent sessions by the Subject that have been granted. | [optional]
 
 ### Return type
 
@@ -1550,9 +1550,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $subject = 'subject_example'; // string | OAuth 2.0 Subject  The subject to revoke authentication sessions for.
@@ -1567,10 +1567,10 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **subject** | **string**| OAuth 2.0 Subject  The subject to revoke authentication sessions for. | [optional] |
-| **sid** | **string**| Login Session ID  The login session to revoke. | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subject** | **string**| OAuth 2.0 Subject  The subject to revoke authentication sessions for. | [optional]
+ **sid** | **string**| Login Session ID  The login session to revoke. | [optional]
 
 ### Return type
 
@@ -1607,17 +1607,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
@@ -1634,11 +1634,11 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **token** | **string**|  | |
-| **clientId** | **string**|  | [optional] |
-| **clientSecret** | **string**|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string**|  |
+ **clientId** | **string**|  | [optional]
+ **clientSecret** | **string**|  | [optional]
 
 ### Return type
 
@@ -1660,7 +1660,7 @@ void (empty response body)
 ## `setOAuth2Client()`
 
 ```php
-setOAuth2Client($id, $oAuth2Client): \Ory\Hydra\Client\Model\OAuth2Client
+setOAuth2Client($id, $oAuth2Client): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Set OAuth 2.0 Client
@@ -1675,13 +1675,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | OAuth 2.0 Client ID
-$oAuth2Client = new \Ory\Hydra\Client\Model\OAuth2Client(); // \Ory\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
+$oAuth2Client = new \Scottbass3\Hydra\Client\Model\OAuth2Client(); // \Scottbass3\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
 
 try {
     $result = $apiInstance->setOAuth2Client($id, $oAuth2Client);
@@ -1693,14 +1693,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| OAuth 2.0 Client ID | |
-| **oAuth2Client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| OAuth 2.0 Client ID |
+ **oAuth2Client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -1718,7 +1718,7 @@ No authorization required
 ## `setOAuth2ClientLifespans()`
 
 ```php
-setOAuth2ClientLifespans($id, $oAuth2ClientTokenLifespans): \Ory\Hydra\Client\Model\OAuth2Client
+setOAuth2ClientLifespans($id, $oAuth2ClientTokenLifespans): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Set OAuth2 Client Token Lifespans
@@ -1733,13 +1733,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string | OAuth 2.0 Client ID
-$oAuth2ClientTokenLifespans = new \Ory\Hydra\Client\Model\OAuth2ClientTokenLifespans(); // \Ory\Hydra\Client\Model\OAuth2ClientTokenLifespans
+$oAuth2ClientTokenLifespans = new \Scottbass3\Hydra\Client\Model\OAuth2ClientTokenLifespans(); // \Scottbass3\Hydra\Client\Model\OAuth2ClientTokenLifespans
 
 try {
     $result = $apiInstance->setOAuth2ClientLifespans($id, $oAuth2ClientTokenLifespans);
@@ -1751,14 +1751,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| OAuth 2.0 Client ID | |
-| **oAuth2ClientTokenLifespans** | [**\Ory\Hydra\Client\Model\OAuth2ClientTokenLifespans**](../Model/OAuth2ClientTokenLifespans.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| OAuth 2.0 Client ID |
+ **oAuth2ClientTokenLifespans** | [**\Scottbass3\Hydra\Client\Model\OAuth2ClientTokenLifespans**](../Model/OAuth2ClientTokenLifespans.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -1776,7 +1776,7 @@ No authorization required
 ## `trustOAuth2JwtGrantIssuer()`
 
 ```php
-trustOAuth2JwtGrantIssuer($trustOAuth2JwtGrantIssuer): \Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer
+trustOAuth2JwtGrantIssuer($trustOAuth2JwtGrantIssuer): \Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer
 ```
 
 Trust OAuth2 JWT Bearer Grant Type Issuer
@@ -1791,12 +1791,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OAuth2Api(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
-$trustOAuth2JwtGrantIssuer = new \Ory\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer(); // \Ory\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer
+$trustOAuth2JwtGrantIssuer = new \Scottbass3\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer(); // \Scottbass3\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer
 
 try {
     $result = $apiInstance->trustOAuth2JwtGrantIssuer($trustOAuth2JwtGrantIssuer);
@@ -1808,13 +1808,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **trustOAuth2JwtGrantIssuer** | [**\Ory\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer**](../Model/TrustOAuth2JwtGrantIssuer.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **trustOAuth2JwtGrantIssuer** | [**\Scottbass3\Hydra\Client\Model\TrustOAuth2JwtGrantIssuer**](../Model/TrustOAuth2JwtGrantIssuer.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
 
 ### Authorization
 

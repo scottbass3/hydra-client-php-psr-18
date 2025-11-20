@@ -1,16 +1,16 @@
-# Ory\Hydra\Client\WellknownApi
+# Scottbass3\Hydra\Client\WellknownApi
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to http://localhost.
 
-| Method | HTTP request | Description |
-| ------------- | ------------- | ------------- |
-| [**discoverJsonWebKeys()**](WellknownApi.md#discoverJsonWebKeys) | **GET** /.well-known/jwks.json | Discover Well-Known JSON Web Keys |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**discoverJsonWebKeys()**](WellknownApi.md#discoverJsonWebKeys) | **GET** /.well-known/jwks.json | Discover Well-Known JSON Web Keys
 
 
 ## `discoverJsonWebKeys()`
 
 ```php
-discoverJsonWebKeys(): \Ory\Hydra\Client\Model\JsonWebKeySet
+discoverJsonWebKeys(): \Scottbass3\Hydra\Client\Model\JsonWebKeySet
 ```
 
 Discover Well-Known JSON Web Keys
@@ -25,9 +25,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\WellknownApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\WellknownApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
 
 ### Authorization
 

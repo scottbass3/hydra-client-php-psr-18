@@ -1,23 +1,23 @@
-# Ory\Hydra\Client\OidcApi
+# Scottbass3\Hydra\Client\OidcApi
 
-All URIs are relative to http://localhost, except if the operation defines another base path.
+All URIs are relative to http://localhost.
 
-| Method | HTTP request | Description |
-| ------------- | ------------- | ------------- |
-| [**createOidcDynamicClient()**](OidcApi.md#createOidcDynamicClient) | **POST** /oauth2/register | Register OAuth2 Client using OpenID Dynamic Client Registration |
-| [**createVerifiableCredential()**](OidcApi.md#createVerifiableCredential) | **POST** /credentials | Issues a Verifiable Credential |
-| [**deleteOidcDynamicClient()**](OidcApi.md#deleteOidcDynamicClient) | **DELETE** /oauth2/register/{id} | Delete OAuth 2.0 Client using the OpenID Dynamic Client Registration Management Protocol |
-| [**discoverOidcConfiguration()**](OidcApi.md#discoverOidcConfiguration) | **GET** /.well-known/openid-configuration | OpenID Connect Discovery |
-| [**getOidcDynamicClient()**](OidcApi.md#getOidcDynamicClient) | **GET** /oauth2/register/{id} | Get OAuth2 Client using OpenID Dynamic Client Registration |
-| [**getOidcUserInfo()**](OidcApi.md#getOidcUserInfo) | **GET** /userinfo | OpenID Connect Userinfo |
-| [**revokeOidcSession()**](OidcApi.md#revokeOidcSession) | **GET** /oauth2/sessions/logout | OpenID Connect Front- and Back-channel Enabled Logout |
-| [**setOidcDynamicClient()**](OidcApi.md#setOidcDynamicClient) | **PUT** /oauth2/register/{id} | Set OAuth2 Client using OpenID Dynamic Client Registration |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createOidcDynamicClient()**](OidcApi.md#createOidcDynamicClient) | **POST** /oauth2/register | Register OAuth2 Client using OpenID Dynamic Client Registration
+[**createVerifiableCredential()**](OidcApi.md#createVerifiableCredential) | **POST** /credentials | Issues a Verifiable Credential
+[**deleteOidcDynamicClient()**](OidcApi.md#deleteOidcDynamicClient) | **DELETE** /oauth2/register/{id} | Delete OAuth 2.0 Client using the OpenID Dynamic Client Registration Management Protocol
+[**discoverOidcConfiguration()**](OidcApi.md#discoverOidcConfiguration) | **GET** /.well-known/openid-configuration | OpenID Connect Discovery
+[**getOidcDynamicClient()**](OidcApi.md#getOidcDynamicClient) | **GET** /oauth2/register/{id} | Get OAuth2 Client using OpenID Dynamic Client Registration
+[**getOidcUserInfo()**](OidcApi.md#getOidcUserInfo) | **GET** /userinfo | OpenID Connect Userinfo
+[**revokeOidcSession()**](OidcApi.md#revokeOidcSession) | **GET** /oauth2/sessions/logout | OpenID Connect Front- and Back-channel Enabled Logout
+[**setOidcDynamicClient()**](OidcApi.md#setOidcDynamicClient) | **PUT** /oauth2/register/{id} | Set OAuth2 Client using OpenID Dynamic Client Registration
 
 
 ## `createOidcDynamicClient()`
 
 ```php
-createOidcDynamicClient($oAuth2Client): \Ory\Hydra\Client\Model\OAuth2Client
+createOidcDynamicClient($oAuth2Client): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Register OAuth2 Client using OpenID Dynamic Client Registration
@@ -32,12 +32,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
-$oAuth2Client = new \Ory\Hydra\Client\Model\OAuth2Client(); // \Ory\Hydra\Client\Model\OAuth2Client | Dynamic Client Registration Request Body
+$oAuth2Client = new \Scottbass3\Hydra\Client\Model\OAuth2Client(); // \Scottbass3\Hydra\Client\Model\OAuth2Client | Dynamic Client Registration Request Body
 
 try {
     $result = $apiInstance->createOidcDynamicClient($oAuth2Client);
@@ -49,13 +49,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **oAuth2Client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| Dynamic Client Registration Request Body | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oAuth2Client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| Dynamic Client Registration Request Body |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `createVerifiableCredential()`
 
 ```php
-createVerifiableCredential($createVerifiableCredentialRequestBody): \Ory\Hydra\Client\Model\VerifiableCredentialResponse
+createVerifiableCredential($createVerifiableCredentialRequestBody): \Scottbass3\Hydra\Client\Model\VerifiableCredentialResponse
 ```
 
 Issues a Verifiable Credential
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
-$createVerifiableCredentialRequestBody = new \Ory\Hydra\Client\Model\CreateVerifiableCredentialRequestBody(); // \Ory\Hydra\Client\Model\CreateVerifiableCredentialRequestBody
+$createVerifiableCredentialRequestBody = new \Scottbass3\Hydra\Client\Model\CreateVerifiableCredentialRequestBody(); // \Scottbass3\Hydra\Client\Model\CreateVerifiableCredentialRequestBody
 
 try {
     $result = $apiInstance->createVerifiableCredential($createVerifiableCredentialRequestBody);
@@ -105,13 +105,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **createVerifiableCredentialRequestBody** | [**\Ory\Hydra\Client\Model\CreateVerifiableCredentialRequestBody**](../Model/CreateVerifiableCredentialRequestBody.md)|  | [optional] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **createVerifiableCredentialRequestBody** | [**\Scottbass3\Hydra\Client\Model\CreateVerifiableCredentialRequestBody**](../Model/CreateVerifiableCredentialRequestBody.md)|  | [optional]
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\VerifiableCredentialResponse**](../Model/VerifiableCredentialResponse.md)
+[**\Scottbass3\Hydra\Client\Model\VerifiableCredentialResponse**](../Model/VerifiableCredentialResponse.md)
 
 ### Authorization
 
@@ -144,12 +144,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearer
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
@@ -164,9 +164,9 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the OAuth 2.0 Client. | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the OAuth 2.0 Client. |
 
 ### Return type
 
@@ -188,7 +188,7 @@ void (empty response body)
 ## `discoverOidcConfiguration()`
 
 ```php
-discoverOidcConfiguration(): \Ory\Hydra\Client\Model\OidcConfiguration
+discoverOidcConfiguration(): \Scottbass3\Hydra\Client\Model\OidcConfiguration
 ```
 
 OpenID Connect Discovery
@@ -203,9 +203,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -223,7 +223,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OidcConfiguration**](../Model/OidcConfiguration.md)
+[**\Scottbass3\Hydra\Client\Model\OidcConfiguration**](../Model/OidcConfiguration.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ No authorization required
 ## `getOidcDynamicClient()`
 
 ```php
-getOidcDynamicClient($id): \Ory\Hydra\Client\Model\OAuth2Client
+getOidcDynamicClient($id): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Get OAuth2 Client using OpenID Dynamic Client Registration
@@ -256,12 +256,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearer
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
@@ -277,13 +277,13 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The id of the OAuth 2.0 Client. | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| The id of the OAuth 2.0 Client. |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
@@ -301,7 +301,7 @@ try {
 ## `getOidcUserInfo()`
 
 ```php
-getOidcUserInfo(): \Ory\Hydra\Client\Model\OidcUserInfo
+getOidcUserInfo(): \Scottbass3\Hydra\Client\Model\OidcUserInfo
 ```
 
 OpenID Connect Userinfo
@@ -316,12 +316,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
@@ -340,7 +340,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OidcUserInfo**](../Model/OidcUserInfo.md)
+[**\Scottbass3\Hydra\Client\Model\OidcUserInfo**](../Model/OidcUserInfo.md)
 
 ### Authorization
 
@@ -373,9 +373,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client()
 );
 
@@ -410,7 +410,7 @@ No authorization required
 ## `setOidcDynamicClient()`
 
 ```php
-setOidcDynamicClient($id, $oAuth2Client): \Ory\Hydra\Client\Model\OAuth2Client
+setOidcDynamicClient($id, $oAuth2Client): \Scottbass3\Hydra\Client\Model\OAuth2Client
 ```
 
 Set OAuth2 Client using OpenID Dynamic Client Registration
@@ -425,17 +425,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer authorization: bearer
-$config = Ory\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Scottbass3\Hydra\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ory\Hydra\Client\Api\OidcApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
+$apiInstance = new Scottbass3\Hydra\Client\Api\OidcApi(
+    // If you want use custom http client, pass your client which implements `Psr\Http\Client\ClientInterface`.
+    // This is optional, `Psr18ClientDiscovery` will be used to find http client. For instance `GuzzleHttp\Client` implements that interface
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | OAuth 2.0 Client ID
-$oAuth2Client = new \Ory\Hydra\Client\Model\OAuth2Client(); // \Ory\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
+$oAuth2Client = new \Scottbass3\Hydra\Client\Model\OAuth2Client(); // \Scottbass3\Hydra\Client\Model\OAuth2Client | OAuth 2.0 Client Request Body
 
 try {
     $result = $apiInstance->setOidcDynamicClient($id, $oAuth2Client);
@@ -447,14 +447,14 @@ try {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| OAuth 2.0 Client ID | |
-| **oAuth2Client** | [**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body | |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **string**| OAuth 2.0 Client ID |
+ **oAuth2Client** | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)| OAuth 2.0 Client Request Body |
 
 ### Return type
 
-[**\Ory\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
 
 ### Authorization
 
