@@ -47,7 +47,11 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\GetVersion200Response**](../Model/GetVersion200Response.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\GetVersion200Response**](../Model/GetVersion200Response.md)
+
+Any other non-2xx status code throws an `ApiException`.
 
 ### Authorization
 
@@ -100,7 +104,12 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\HealthStatus**](../Model/HealthStatus.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\HealthStatus**](../Model/HealthStatus.md)
+500 | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
+
+Any other non-2xx status code throws an `ApiException`.
 
 ### Authorization
 
@@ -153,7 +162,12 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\IsReady200Response**](../Model/IsReady200Response.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\IsReady200Response**](../Model/IsReady200Response.md)
+503 | [**\Scottbass3\Hydra\Client\Model\IsReady503Response**](../Model/IsReady503Response.md)
+
+Any other non-2xx status code throws an `ApiException`.
 
 ### Authorization
 

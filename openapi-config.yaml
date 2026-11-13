@@ -1,0 +1,10 @@
+library: psr-18
+invokerPackage: Scottbass3\Hydra\Client
+packageName: hydra-client-php-psr-18
+gitHost: github.com
+gitUserId: scottbass3
+gitRepoId: hydra-client-php-psr-18
+variableNamingConvention: camelCase
+disallowAdditionalPropertiesIfNotPresent: false
+enumUnknownDefaultCase: true
+legacyDiscriminatorBehavior: true

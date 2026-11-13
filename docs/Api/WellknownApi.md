@@ -45,7 +45,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\JsonWebKeySet**](../Model/JsonWebKeySet.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 

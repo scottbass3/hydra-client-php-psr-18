@@ -80,7 +80,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -138,7 +141,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -194,7 +200,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -252,7 +261,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -308,7 +320,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+201 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+400 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -363,7 +379,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -418,7 +437,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -473,7 +495,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -529,7 +554,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -585,7 +613,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2ConsentRequest**](../Model/OAuth2ConsentRequest.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2ConsentRequest**](../Model/OAuth2ConsentRequest.md)
+410 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -641,7 +673,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2LoginRequest**](../Model/OAuth2LoginRequest.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2LoginRequest**](../Model/OAuth2LoginRequest.md)
+410 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -697,7 +733,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2LogoutRequest**](../Model/OAuth2LogoutRequest.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2LogoutRequest**](../Model/OAuth2LogoutRequest.md)
+410 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -753,7 +793,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -811,7 +854,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\IntrospectedOAuth2Token**](../Model/IntrospectedOAuth2Token.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\IntrospectedOAuth2Token**](../Model/IntrospectedOAuth2Token.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -873,7 +919,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client[]**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client[]**](../Model/OAuth2Client.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -913,7 +962,7 @@ $apiInstance = new Scottbass3\Hydra\Client\Api\OAuth2Api(
 );
 $subject = 'subject_example'; // string | The subject to list the consent sessions for.
 $pageSize = 250; // int | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
-$pageToken = '1'; // string | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
+$pageToken = 'pageToken_example'; // string | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
 $loginSessionId = 'loginSessionId_example'; // string | The login session id to list the consent sessions for.
 
 try {
@@ -930,12 +979,15 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subject** | **string**| The subject to list the consent sessions for. |
  **pageSize** | **int**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250]
- **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to &#39;1&#39;]
+ **pageToken** | **string**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional]
  **loginSessionId** | **string**| The login session id to list the consent sessions for. | [optional]
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2ConsentSession[]**](../Model/OAuth2ConsentSession.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2ConsentSession[]**](../Model/OAuth2ConsentSession.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -995,7 +1047,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer[]**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -1048,7 +1103,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+HTTP status | Return type
+------------- | -------------
+302 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1101,7 +1159,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\DeviceAuthorization**](../Model/DeviceAuthorization.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\DeviceAuthorization**](../Model/DeviceAuthorization.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1174,7 +1235,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2TokenExchange**](../Model/OAuth2TokenExchange.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2TokenExchange**](../Model/OAuth2TokenExchange.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1232,7 +1296,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+404 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1285,7 +1353,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+HTTP status | Return type
+------------- | -------------
+302 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1343,7 +1414,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1401,7 +1475,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2RedirectTo**](../Model/OAuth2RedirectTo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1456,7 +1533,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1517,7 +1597,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1574,7 +1657,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1642,7 +1728,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+200 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1700,7 +1789,12 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+400 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+404 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -1758,7 +1852,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -1814,7 +1911,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+HTTP status | Return type
+------------- | -------------
+201 | [**\Scottbass3\Hydra\Client\Model\TrustedOAuth2JwtGrantIssuer**](../Model/TrustedOAuth2JwtGrantIssuer.md)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 

@@ -55,7 +55,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+201 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+400 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -111,7 +115,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\VerifiableCredentialResponse**](../Model/VerifiableCredentialResponse.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\VerifiableCredentialResponse**](../Model/VerifiableCredentialResponse.md)
+400 | [**\Scottbass3\Hydra\Client\Model\VerifiableCredentialPrimingResponse**](../Model/VerifiableCredentialPrimingResponse.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -170,7 +178,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+204 | null (empty response body)
+default | [**\Scottbass3\Hydra\Client\Model\GenericError**](../Model/GenericError.md)
 
 ### Authorization
 
@@ -223,7 +234,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OidcConfiguration**](../Model/OidcConfiguration.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OidcConfiguration**](../Model/OidcConfiguration.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -283,7 +297,10 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -340,7 +357,10 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OidcUserInfo**](../Model/OidcUserInfo.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OidcUserInfo**](../Model/OidcUserInfo.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
@@ -392,7 +412,11 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+HTTP status | Return type
+------------- | -------------
+302 | null (empty response body)
+
+Any other non-2xx status code throws an `ApiException`.
 
 ### Authorization
 
@@ -454,7 +478,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+HTTP status | Return type
+------------- | -------------
+200 | [**\Scottbass3\Hydra\Client\Model\OAuth2Client**](../Model/OAuth2Client.md)
+404 | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
+default | [**\Scottbass3\Hydra\Client\Model\ErrorOAuth2**](../Model/ErrorOAuth2.md)
 
 ### Authorization
 
